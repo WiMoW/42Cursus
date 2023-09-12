@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
-int ft_isprint(int c);
+
+unsigned long ft_strlen(const char *str);
 
 int main()
 {
-    printf("%d\n", isprint('\t'));
-    printf("%d\n", ft_isprint('\t'));
+    const   char        source[] = "Hola k ase";
+    char                destination[20];
+
+    printf("%d\n", strlcpy(destination, source, sizeof(destination)));
+    printf("%s\n", destination);
     return (0);
 }
