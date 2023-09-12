@@ -2,15 +2,14 @@
 #include <ctype.h>
 #include <string.h>
 
-unsigned long ft_strlen(const char *s);
-unsigned long ft_strlcpy(char *dst, const char *src, unsigned long size);
+int ft_tolower(int c);
+int ft_toupper(int c);
 
 int main()
 {
-    const   char        source[] = "Hola k ase";
-    char                destination[20];
+    char c = 'a';
 
-    printf("%ld\n", strlcpy(destination, source, sizeof(destination)));
-    printf("%s\n", destination);
+    c = ft_toupper(c);
+    printf("%c\n", c);
     return (0);
 }
