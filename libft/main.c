@@ -4,13 +4,14 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-char *ft_strrchr(const char *s, int c);
+int ft_strncmp(const char *s1, const char *s2, unsigned long n);
 
 int main()
 {
-    char string[] = "Hello there!";
+    char *s1 = "Niños";
+    char *s2 = "Niñas";
 
-    printf("ft_strrchr: %s\n", ft_strrchr(string, 'l'));
-    printf("   strrchr: %s\n", strrchr(string, 'l'));
+    printf("ft_strncmp: %d\n", ft_strncmp(s1, s2, 5));
+    printf("strncmp: %d\n", strncmp(s1, s2, 5));
     return (0);
 }
