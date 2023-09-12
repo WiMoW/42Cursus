@@ -1,18 +1,12 @@
 char    *ft_strchr(const char *s, int c)
 {
-    unsigned long   i;
-    unsigned char   *ptr;
+    int i;
 
     i = 0;
-    ptr = s;
-    while (ptr[i] != '\0')
-    {
-        if (ptr[i] == c)
-            return (ptr + i);
+    while (s[i] != '\0' && s[i] != c)
         i++;
-    }
-    if (ptr[i] == c)
-        return (ptr + i);
-    return (NULL);
-
+    if (s[i] == c)
+        return ((char *)s + i);
+    else
+        return (NULL);
 }
