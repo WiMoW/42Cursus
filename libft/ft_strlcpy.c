@@ -1,6 +1,6 @@
-unsigned long    ft_strlen(const char *s);
+size_t  ft_strlen(const char *s);
 
-unsigned    long    ft_strlcpy(char *dst, const char *src, unsigned long size)
+size_t  ft_strlcpy(char *dst, const char *src, size_t size)
 {
     unsigned    long    i;
 

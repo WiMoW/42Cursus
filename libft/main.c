@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <stddef.h>
 
-int ft_strncmp(const char *s1, const char *s2, unsigned long n);
+char *ft_strnstr(const char *big, const char *little, size_t len);
 
 int main()
 {
     char *s1 = "Niños";
-    char *s2 = "Niñas";
+    char *s2 = "ño";
 
-    printf("ft_strncmp: %d\n", ft_strncmp(s1, s2, 5));
-    printf("strncmp: %d\n", strncmp(s1, s2, 5));
+    //printf("ft_strnstr: %s\n", ft_strnstr(s1, s2, 2));
+    printf("strnstr: %s\n", strnstr(s1, s2, 2));
     return (0);
 }
