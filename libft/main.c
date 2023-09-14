@@ -4,14 +4,14 @@
 #include <stddef.h>
 #include <strings.h>
 
-
+int ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int main()
 {
-    char s1[] = "Niños";
-    char s2[] = "ños";
+    char s1[] = "Hello there!";
+    char s2[] = "Hellothere!";
 
-    printf("strnstr: %s\n", strnstr(s1, s2, 6));
-    printf("ft_strnstr: %s\n", ft_strnstr(s1, s2, 6));
+    printf("memcpm: %d\n", memcmp(s1, s2, 6));
+    printf("ft_memcpm: %d\n", ft_memcmp(s1, s2, 6));
     return (0);
 }
