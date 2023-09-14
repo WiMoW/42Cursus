@@ -2,15 +2,19 @@
 #include <ctype.h>
 #include <string.h>
 #include <stddef.h>
+#include <strings.h>
 
-char *ft_strnstr(const char *big, const char *little, size_t len);
+void    ft_bzero(void *s, size_t n);
 
 int main()
 {
-    char *s1 = "Niños";
-    char *s2 = "ño";
+    char s1[] = "Niños";
+    int i;
 
-    //printf("ft_strnstr: %s\n", ft_strnstr(s1, s2, 2));
-    printf("strnstr: %s\n", strnstr(s1, s2, 2));
+    i = 0;
+    bzero(s1, 4);
+    printf("bzero: %c\n", s1[4]);
+    ft_bzero(s1, 5);
+    printf("ft_bzero: %c\n", s1[4]);
     return (0);
 }
