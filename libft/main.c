@@ -4,17 +4,14 @@
 #include <stddef.h>
 #include <strings.h>
 
-void    ft_bzero(void *s, size_t n);
+
 
 int main()
 {
     char s1[] = "Niños";
-    int i;
+    char s2[] = "ños";
 
-    i = 0;
-    bzero(s1, 4);
-    printf("bzero: %c\n", s1[4]);
-    ft_bzero(s1, 5);
-    printf("ft_bzero: %c\n", s1[4]);
+    printf("strnstr: %s\n", strnstr(s1, s2, 6));
+    printf("ft_strnstr: %s\n", ft_strnstr(s1, s2, 6));
     return (0);
 }
