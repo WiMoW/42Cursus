@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:36:38 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 10:25:54 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/15 11:33:22 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_strlen(char *str);
 int		ft_strncmp(char *s1, char *s2, size_t n);
+int		ft_atoi(const char *str);
 
 void	ft_bzero(void *s, size_t n);
 
