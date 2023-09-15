@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:40:18 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/14 11:40:20 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/15 10:23:55 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *str)
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 		i++;
 	return (i);
 }
