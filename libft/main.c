@@ -5,36 +5,32 @@
 #include <strings.h>
 #include <stdlib.h>
 
-int	ft_atoi(const char *str)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int	result;
-	int	i;
-	int	sign;
+	size_t	i;
+	int		j;
 
-	result = 0;
 	i = 0;
-	sign = 1;
-	while (str[i] == ' ')
-		i++;
-	if ((str[i] == '-') || (str[i] == '+'))
+	j = 0;
+	while ((big[i] != '\0') && (i < len))
 	{
-		if (str[i] == '-')
-			sign = -1;
+		while ((big[i + j] == little[j])
+			&& (little[j] != '\0') && (i + j < len))
+			j++;
+		if (little[j] == '\0')
+			return ((char *)big + i);
+		j = 0;
 		i++;
 	}
-	while ((str[i] != '\0') && (str[i] >= '0') && (str[i] <= '9'))
-	{
-		result = result * 10 + str[i] - '0';
-		i++;
-	}
-	return (sign * result);
+	return (0);
 }
 
 int	main()
 {
-	char	s1[] = "-123";
+	char	grande[] = "Hello there";
+	char	peque[] = "lo";
 
-	printf("atoi: %d\n", atoi(s1));
-	printf("ft_atoi: %d\n", ft_atoi(s1));
+	printf("strnstr: %s\n", strnstr(grande, peque, 8));
+	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
 	return (0);
 }

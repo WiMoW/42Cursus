@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:45:38 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/14 11:45:40 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/15 11:19:14 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int			i;
+	size_t		i;
 	const char	*string;
 
 	i = 0;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:40:03 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/14 11:40:06 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/15 11:24:38 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlen(const char *s);
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned long	i;
+	size_t	i;
 
 	i = 0;
 	if (size != 0)
