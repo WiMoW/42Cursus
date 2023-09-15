@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    int is_ascii;
+	int	is_ascii;
 
-    is_ascii = 0;
-    if ((c >= 0) && (c <= 127))
-        is_ascii = 1;
-    else
-        is_ascii = 0;
-    return (is_ascii);
+	is_ascii = 0;
+	if ((c >= 0) && (c <= 127))
+		is_ascii = 1;
+	else
+		is_ascii = 0;
+	return (is_ascii);
 }

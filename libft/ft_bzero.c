@@ -12,10 +12,10 @@
 
 #include <stdlib.h>
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	int i;
-	unsigned char    *ptr;
+	int				i;
+	unsigned char	*ptr;
 
 	i = 0;
 	ptr = s;

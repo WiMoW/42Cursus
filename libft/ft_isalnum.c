@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    int is_alnum;
+	int	is_alnum;
 
-    is_alnum = 0;
-    if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')) || ((c >= '0') && (c <= '9')))
-        is_alnum = 1;
-    else
-        is_alnum = 0;
-    return (is_alnum);
+	is_alnum = 0;
+	if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')) || ((c >= '0') && (c <= '9')))
+		is_alnum = 1;
+	else
+		is_alnum = 0;
+	return (is_alnum);
 }

@@ -12,26 +12,26 @@
 
 #include <stdlib.h>
 
-void    *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-    char    *destination;
-    const   char    *source;
+	char		*destination;
+	const char	*source;
 
-    destination = dest;
-    source = src;
-    if ((destination == source) || (n == 0))
-        return (dest);
-    if ((source < destination) && (source + n > destination))
-    {
-        source += n;
-        destination += n;
-        while (n--)
-            *(--destination) = *(--source);
-    }
-    else
-    {
-        while (n--)
-            *destination++ = *source++;
-    }
-    return (dest);
+	destination = dest;
+	source = src;
+	if ((destination == source) || (n == 0))
+		return (dest);
+	if ((source < destination) && (source + n > destination))
+	{
+		source += n;
+		destination += n;
+		while (n--)
+			*(--destination) = *(--source);
+	}
+	else
+	{
+		while (n--)
+			*destination++ = *source++;
+	}
+	return (dest);
 }

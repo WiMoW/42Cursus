@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    int is_print;
+	int	is_print;
 
-    is_print = 0;
-    if ((c >= 32) && (c <= 126))
-        is_print = 1;
-    else
-        is_print = 0;
-    return (is_print);
+	is_print = 0;
+	if ((c >= 32) && (c <= 126))
+		is_print = 1;
+	else
+		is_print = 0;
+	return (is_print);
 }

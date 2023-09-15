@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    int is_alpha;
+	int	is_alpha;
 
-    is_alpha = 0;
-    if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
-        is_alpha = 1;
-    else
-        is_alpha = 0;
-    return (is_alpha);
+	is_alpha = 0;
+	if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
+		is_alpha = 1;
+	else
+		is_alpha = 0;
+	return (is_alpha);
 }
