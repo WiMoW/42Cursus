@@ -3,15 +3,38 @@
 #include <string.h>
 #include <stddef.h>
 #include <strings.h>
+#include <stdlib.h>
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
+int	ft_atoi(const char *str)
+{
+	int	result;
+	int	i;
+	int	sign;
+
+	result = 0;
+	i = 0;
+	sign = 1;
+	while (str[i] == ' ')
+		i++;
+	if ((str[i] == '-') || (str[i] == '+'))
+	{
+		if (str[i] == '-')
+			sign = -1;
+		i++;
+	}
+	while ((str[i] != '\0') && (str[i] >= '0') && (str[i] <= '9'))
+	{
+		result = result * 10 + str[i] - '0';
+		i++;
+	}
+	return (sign * result);
+}
 
 int	main()
 {
-	char	s1[] = "Hello there!";
-	char	s2[] = "Hellothere!";
+	char	s1[] = "-123";
 
-	printf("memcpm: %d\n", memcmp(s1, s2, 6));
-	printf("ft_memcpm: %d\n", ft_memcmp(s1, s2, 6));
+	printf("atoi: %d\n", atoi(s1));
+	printf("ft_atoi: %d\n", ft_atoi(s1));
 	return (0);
 }
