@@ -6,7 +6,7 @@
 #    By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/15 12:51:14 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/15 13:02:17 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ MY_SOURCES = ft_atoi.c \
 			ft_strrchr.c \
 			ft_tolower.c \
 			ft_toupper.c \
+			main.c \
 
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
 
