@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 16:09:24 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:12:48 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:23:44 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,12 @@ int	ft_isascii(int c)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	c;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	c = 'a';
+	printf("isascii: %d\n", isascii(c));
+	printf("ft_isascii: %d\n", ft_isascii(c));
 	return (0);
 }*/

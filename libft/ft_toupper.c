@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:41:57 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:13:51 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:31:45 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,12 @@ int	ft_toupper(int c)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	c;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	c = 'a';
+	printf("toupper: %c\n", toupper(c));
+	printf("ft_toupper: %c\n", ft_toupper(c));
 	return (0);
 }*/

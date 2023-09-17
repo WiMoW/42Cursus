@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 15:51:15 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:12:39 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:55:57 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_isalnum(int c)
 	is_alnum = 0;
 	if (((c >= 'a') && (c <= 'z'))
 		|| ((c >= 'A') && (c <= 'Z')) || ((c >= '0') && (c <= '9')))
-		is_alnum = 1;
+		is_alnum = 8;
 	else
 		is_alnum = 0;
 	return (is_alnum);
@@ -31,14 +31,12 @@ int	ft_isalnum(int c)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	c;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	c = 'a';
+	printf("isalnum: %d\n", isalnum(c));
+	printf("ft_isalnum: %d\n", ft_isalnum(c));
 	return (0);
 }*/

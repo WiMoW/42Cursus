@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:40:42 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:13:35 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:30:09 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,16 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	*str1;
+	char	*str2;
+	int		n;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	str1 = "Hello there";
+	str2 = "Hello there";
+	n = 5;
+	printf("strncmp: %d\n", strncmp(str1, str2, n));
+	printf("ft_strncmp: %d\n", ft_strncmp(str1, str2, n));
 	return (0);
 }*/

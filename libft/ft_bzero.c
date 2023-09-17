@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:36:58 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:12:31 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:22:31 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,11 @@ void	ft_bzero(void *s, size_t n)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	str[] = "Hello there";
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	printf("bzero: %s\n", bzero(str, 5));
+	printf("ft_bzero: %s\n", ft_bzero(str, 5));
 	return (0);
 }*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:38:47 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:13:13 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:27:01 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,18 @@ void	*ft_memset(void *s, int c, size_t n)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	str[] = "Hello there";
+	char	*ptr;
+	int		c;
+	int		n;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	c = 'a';
+	n = 5;
+	ptr = memset(str, c, n);
+	printf("memset: %s\n", ptr);
+	ptr = ft_memset(str, c, n);
+	printf("ft_memset: %s\n", ptr);
 	return (0);
 }*/

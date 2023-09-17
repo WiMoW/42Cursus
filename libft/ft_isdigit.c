@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 15:37:38 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:12:53 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 13:01:41 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_isdigit(int c)
 
 	is_digit = 0;
 	if ((c >= '0') && (c <= '9'))
-		is_digit = 1;
+		is_digit = 2048;
 	else
 		is_digit = 0;
 	return (is_digit);
@@ -30,14 +30,12 @@ int	ft_isdigit(int c)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	c;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	c = 'a';
+	printf("isdigit: %d\n", isdigit(c));
+	printf("ft_isdigit: %d\n", ft_isdigit(c));
 	return (0);
 }*/

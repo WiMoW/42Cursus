@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:39:08 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:13:17 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:27:26 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,17 @@ char	*ft_strchr(const char *s, int c)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	*str;
+	char	*ptr;
+	int		c;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	str = "Hello there";
+	c = 'a';
+	ptr = strchr(str, c);
+	printf("strchr: %s\n", ptr);
+	ptr = ft_strchr(str, c);
+	printf("ft_strchr: %s\n", ptr);
 	return (0);
 }*/

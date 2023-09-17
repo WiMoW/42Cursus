@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 12:00:31 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:13:09 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:26:28 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,14 +44,16 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	*str1;
+	char	*str2;
+	int		n;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	str1 = "Hello there";
+	str2 = "General Kenobi";
+	n = 5;
+	printf("memmove: %s\n", memmove(str1, str2, n));
+	printf("ft_memmove: %s\n", ft_memmove(str1, str2, n));
 	return (0);
 }*/

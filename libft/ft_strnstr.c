@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:41:03 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:13:39 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:30:27 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,16 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	*big;
+	char	*little;
+	size_t	len;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	big = "Hello there";
+	little = "there";
+	len = 5;
+	printf("strnstr: %s\n", strnstr(big, little, len));
+	printf("ft_strnstr: %s\n", ft_strnstr(big, little, len));
 	return (0);
 }*/

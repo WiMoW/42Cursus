@@ -6,7 +6,7 @@
 /*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:29 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/17 12:17:46 by wimo             ###   ########.fr       */
+/*   Updated: 2023/09/17 12:21:01 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,6 @@ int	ft_atoi(const char *str)
 #include <strings.h>
 #include <stdlib.h>
 #include "libft.h"
-
-int	ft_atoi(const char *str);
 
 int	main()
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:39:42 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:13:20 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:28:02 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,16 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	*src;
+	char	*dst;
+	size_t	size;
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	src = "Hello ";
+	dst = "there";
+	size = 5;
+	printf("strlcat: %lu\n", strlcat(dst, src, size));
+	printf("ft_strlcat: %lu\n", ft_strlcat(dst, src, size));
 	return (0);
 }*/
