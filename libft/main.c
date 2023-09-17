@@ -281,7 +281,7 @@ int	main()
 	return (0);
 }
 */
-
+/*
 int main()
 {
 	int i;
@@ -317,4 +317,5 @@ int main()
 	printf("\n");
 	return 0;
 }
+*/
 
