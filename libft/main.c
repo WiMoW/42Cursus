@@ -202,17 +202,17 @@ int	main()
 	return (0);
 }
 */
-/*
+
 int	main()
 {
 	char	*str;
 
 	str = "Hello there";
 	printf("strlen: %ld\n", strlen(str));
-	printf("ft_strlen: %d\n", ft_strlen(str));
+	printf("ft_strlen: %ld\n", ft_strlen(str));
 	return (0);
 }
-*/
+
 /*
 int	main()
 {

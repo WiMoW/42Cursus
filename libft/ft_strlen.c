@@ -6,11 +6,12 @@
 /*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:40:18 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/17 13:30:04 by wimo             ###   ########.fr       */
+/*   Updated: 2023/09/17 13:49:02 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stddef.h>
 
 size_t	ft_strlen(const char *str)
 {
@@ -36,6 +37,6 @@ int	main()
 
 	str = "Hello there";
 	printf("strlen: %ld\n", strlen(str));
-	printf("ft_strlen: %d\n", ft_strlen(str));
+	printf("ft_strlen: %ld\n", ft_strlen(str));
 	return (0);
 }*/
