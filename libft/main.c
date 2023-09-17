@@ -202,7 +202,7 @@ int	main()
 	return (0);
 }
 */
-
+/*
 int	main()
 {
 	char	*str;
@@ -212,7 +212,7 @@ int	main()
 	printf("ft_strlen: %ld\n", ft_strlen(str));
 	return (0);
 }
-
+*/
 /*
 int	main()
 {
@@ -281,3 +281,40 @@ int	main()
 	return (0);
 }
 */
+
+int main()
+{
+	int i;
+	int *ptr; 
+
+	i = 0;
+	ptr = calloc(10, sizeof(int));
+	if (ptr == NULL)
+	{
+		printf("Error! memory not allocated.");
+		exit(0);
+	}
+	while (i < 10)
+	{
+		printf("%d ", ptr[i]);
+		i++;
+	}
+	free(ptr);
+	printf("\n");
+	i = 0;
+	ptr = ft_calloc(10, sizeof(int));
+	if (ptr == NULL)
+	{
+		printf("Error! memory not allocated.");
+		exit(0);
+	}
+	while (i < 10)
+	{
+		printf("%d ", ptr[i]);
+		i++;
+	}
+	free(ptr);
+	printf("\n");
+	return 0;
+}
+

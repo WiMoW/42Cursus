@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+         #
+#    By: codespace <codespace@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/17 12:10:11 by wimo             ###   ########.fr        #
+#    Updated: 2023/09/17 14:55:19 by codespace        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ MY_SOURCES = ft_atoi.c \
 			ft_strrchr.c \
 			ft_tolower.c \
 			ft_toupper.c \
+			ft_calloc.c \
 
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
 
@@ -45,7 +46,6 @@ REMOVE = rm -f
 all: $(NAME) clean
 
 $(NAME): $(MY_OBJECTS)
-	#$(CC) $(CFLAGS) $(MY_OBJECTS) -o $(NAME)
 	ar rcs $(NAME) $(MY_OBJECTS)
 
 clean: 
