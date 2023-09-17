@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:29 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/15 13:12:35 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/17 12:17:46 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,14 +43,13 @@ int	ft_atoi(const char *str)
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len);
+int	ft_atoi(const char *str);
 
 int	main()
 {
-	char	grande[] = "Hello there";
-	char	peque[] = "lo";
+	char	str[] = "--123";
 
-	printf("strnstr: %s\n", strnstr(grande, peque, 8));
-	printf("ft_strnstr: %s\n", ft_strnstr(grande, peque, 8));
+	printf("atoi: %d\n", atoi(str));
+	printf("ft_atoi: %d\n", ft_atoi(str));
 	return (0);
 }*/

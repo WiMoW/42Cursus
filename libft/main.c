@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
-#include <string.h>
 #include <stddef.h>
 #include <strings.h>
 #include <stdlib.h>
+#include <bsd/string.h>
 #include "libft.h"
-
-char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 int	main()
 {

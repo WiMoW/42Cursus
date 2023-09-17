@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+         #
+#    By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/15 13:02:17 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/17 12:10:11 by wimo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,18 +33,20 @@ MY_SOURCES = ft_atoi.c \
 			ft_strrchr.c \
 			ft_tolower.c \
 			ft_toupper.c \
-			main.c \
 
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
 
-CFLAGS += -Wall -Wextra -Werror
+CC = cc
+
+CFLAGS += -lbsd -Wall -Wextra -Werror 
 
 REMOVE = rm -f
 
-all: $(NAME)
+all: $(NAME) clean
 
 $(NAME): $(MY_OBJECTS)
-	cc $(CFLAGS) $(MY_OBJECTS) -o $(NAME)
+	#$(CC) $(CFLAGS) $(MY_OBJECTS) -o $(NAME)
+	ar rcs $(NAME) $(MY_OBJECTS)
 
 clean: 
 	$(REMOVE) $(MY_OBJECTS)
