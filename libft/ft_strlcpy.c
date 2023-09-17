@@ -6,7 +6,7 @@
 /*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:40:03 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/17 12:29:33 by wimo             ###   ########.fr       */
+/*   Updated: 2023/09/17 13:29:35 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 int	main()
 {
 	char	*src;
-	char	*dst;
+	char	dst[10];
 	size_t	size;
 
 	src = "Hello ";
-	dst = " there";
 	size = 5;
 	printf("strlcpy: %lu\n", strlcpy(dst, src, size));
 	printf("ft_strlcpy: %lu\n", ft_strlcpy(dst, src, size));

@@ -6,7 +6,7 @@
 /*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 12:00:31 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/17 12:26:28 by wimo             ###   ########.fr       */
+/*   Updated: 2023/09/17 13:27:29 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,14 +46,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 int	main()
 {
-	char	*str1;
-	char	*str2;
-	int		n;
+	char str1[20];
+    const char *str2 = "Hello there";
 
-	str1 = "Hello there";
-	str2 = "General Kenobi";
-	n = 5;
-	printf("memmove: %s\n", memmove(str1, str2, n));
-	printf("ft_memmove: %s\n", ft_memmove(str1, str2, n));
-	return (0);
+	memmove(str1, str2, 5);
+	printf("str1 after memmove: %s\n", str1);
+	ft_memmove(str1, str2, 5);
+	printf("str1 after ft_memmove: %s\n", str1);
+    return	(0);
 }*/

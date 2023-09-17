@@ -6,7 +6,7 @@
 /*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 12:00:13 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/17 12:25:58 by wimo             ###   ########.fr       */
+/*   Updated: 2023/09/17 13:27:14 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,14 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 #include <stdlib.h>
 #include "libft.h"
 
-int	main()
+int main()
 {
-	char	*str1;
-	char	*str2;
-	int		n;
+    char str1[20];
+    const char *str2 = "Hello there";
 
-	str1 = "Hello there";
-	str2 = "General Kenobi";
-	n = 5;
-	printf("memcpy: %s\n", memcpy(str1, str2, n));
-	printf("ft_memcpy: %s\n", ft_memcpy(str1, str2, n));
-	return (0);
+	memcpy(str1, str2, 5);
+	printf("str1 after memcpy: %s\n", str1);
+	ft_memcpy(str1, str2, 5);
+	printf("str1 after ft_memcpy: %s\n", str1);
+    return	(0);
 }*/

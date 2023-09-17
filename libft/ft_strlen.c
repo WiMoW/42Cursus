@@ -6,7 +6,7 @@
 /*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:40:18 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/17 13:22:15 by wimo             ###   ########.fr       */
+/*   Updated: 2023/09/17 13:30:04 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	main()
 	char	*str;
 
 	str = "Hello there";
-	printf("strlen: %lu\n", strlen(str));
-	printf("ft_strlen: %lu\n", ft_strlen(str));
+	printf("strlen: %ld\n", strlen(str));
+	printf("ft_strlen: %d\n", ft_strlen(str));
 	return (0);
 }*/
