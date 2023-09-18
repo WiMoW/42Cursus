@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: codespace <codespace@student.42.fr>        +#+  +:+       +#+         #
+#    By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/17 14:55:19 by codespace        ###   ########.fr        #
+#    Updated: 2023/09/18 11:48:48 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ MY_OBJECTS = $(MY_SOURCES:.c=.o)
 
 CC = cc
 
-CFLAGS += -lbsd -Wall -Wextra -Werror 
+CFLAGS += -Wall -Wextra -Werror 
 
 REMOVE = rm -f
 
