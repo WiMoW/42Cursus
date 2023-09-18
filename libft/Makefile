@@ -6,7 +6,7 @@
 #    By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/18 16:21:57 by wimo             ###   ########.fr        #
+#    Updated: 2023/09/18 17:52:05 by wimo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ MY_SOURCES = ft_atoi.c \
 			ft_strnstr.c \
 			ft_strrchr.c \
 			ft_strdup.c \
+			ft_strjoin.c \
 			ft_substr.c \
 			ft_tolower.c \
 			ft_toupper.c \
@@ -45,7 +46,7 @@ CFLAGS += -lbsd -Wall -Wextra -Werror
 
 REMOVE = rm -f
 
-all: $(NAME) clean
+all: $(NAME)
 
 $(NAME): $(MY_OBJECTS)
 	ar rcs $(NAME) $(MY_OBJECTS)
@@ -56,4 +57,4 @@ clean:
 fclean: clean
 	$(REMOVE) $(NAME)
 
-re: fclean all clean
+re: fclean all
