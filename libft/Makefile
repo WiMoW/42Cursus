@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+         #
+#    By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/18 11:48:48 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/18 16:21:57 by wimo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,8 @@ MY_SOURCES = ft_atoi.c \
 			ft_strncmp.c \
 			ft_strnstr.c \
 			ft_strrchr.c \
+			ft_strdup.c \
+			ft_substr.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			ft_calloc.c \
@@ -39,7 +41,7 @@ MY_OBJECTS = $(MY_SOURCES:.c=.o)
 
 CC = cc
 
-CFLAGS += -Wall -Wextra -Werror 
+CFLAGS += -lbsd -Wall -Wextra -Werror 
 
 REMOVE = rm -f
 
@@ -54,4 +56,4 @@ clean:
 fclean: clean
 	$(REMOVE) $(NAME)
 
-redo: fclean all
+re: fclean all clean

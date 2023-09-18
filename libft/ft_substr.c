@@ -1,50 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimo <wimo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/18 15:20:41 by wimo              #+#    #+#             */
-/*   Updated: 2023/09/18 16:04:14 by wimo             ###   ########.fr       */
+/*   Created: 2023/09/18 15:20:29 by wimo              #+#    #+#             */
+/*   Updated: 2023/09/18 16:02:18 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int		i;
-	char	*ptr;
+	size_t		i;
+	char		*ptr;
 
+	ptr = malloc(len + 1);
 	i = 0;
-	ptr = malloc(sizeof(s1));
-	while (s1[i] != '\0')
+	if ((s == NULL) || (start >= ft_strlen(s)))
+		return (NULL);
+	if (ptr == NULL)
+		return (NULL);
+	while ((i < len) && (s[start] != '\0'))
 	{
-		ptr[i] = s1[i];
+		ptr[i] = s[start];
 		i++;
+		start++;
 	}
-	ptr[i] = '\0';
 	return (ptr);
 }
-
 /*
-#include <string.h>
 #include <stdio.h>
 
 int	main()
 {
-	char	string[] = "";
-	char	*ptr;
+	char const	string[] = "Mondongo";
+	char		*substring;
 
-	ptr = strdup(string);
-	printf("%s\n", ptr);
-	printf("strdup: %lu\n", ft_strlen(ptr));
-	free(ptr);
-	ptr = ft_strdup(string);
-	printf("%s\n", ptr);
-	printf("ft_strdup: %lu\n", ft_strlen(ptr));
-	free(ptr);
+	substring = ft_substr(string, 5, 6);
+	printf("Original string: %s\n", string);
+	printf("Substring: %s\n", substring);
+	printf("Length: %lu\n", ft_strlen(substring));
+	free(substring);
 	return (0);
 }
 */

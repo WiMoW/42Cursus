@@ -318,3 +318,39 @@ int main()
 	return 0;
 }
 */
+/*
+#include <string.h>
+#include <stdio.h>
+
+int	main()
+{
+	char	string[] = "";
+	char	*ptr;
+
+	ptr = strdup(string);
+	printf("%s\n", ptr);
+	printf("strdup: %lu\n", ft_strlen(ptr));
+	free(ptr);
+	ptr = ft_strdup(string);
+	printf("%s\n", ptr);
+	printf("ft_strdup: %lu\n", ft_strlen(ptr));
+	free(ptr);
+	return (0);
+}
+*/
+/*
+#include <stdio.h>
+
+int	main()
+{
+	char const	string[] = "Mondongo";
+	char		*substring;
+
+	substring = ft_substr(string, 5, 6);
+	printf("Original string: %s\n", string);
+	printf("Substring: %s\n", substring);
+	printf("Length: %lu\n", ft_strlen(substring));
+	free(substring);
+	return (0);
+}
+*/
