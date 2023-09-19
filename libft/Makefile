@@ -6,7 +6,7 @@
 #    By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/19 09:32:57 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/19 09:59:21 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ MY_SOURCES = ft_atoi.c \
 			ft_strrchr.c \
 			ft_strdup.c \
 			ft_strjoin.c \
+			ft_strtrim.c \
 			ft_substr.c \
 			ft_tolower.c \
 			ft_toupper.c \
