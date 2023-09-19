@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 18:03:52 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:57:51 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/19 11:34:27 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ int main()
 
 	ptr = ft_strtrim(s1, set);
 	printf("ft_strtrim: %s\n", ptr);
+	free(ptr);
 	return (0);
 }
 */
