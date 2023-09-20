@@ -6,13 +6,13 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 18:03:52 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 11:34:27 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/19 20:09:11 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*dest;
 	size_t	i;

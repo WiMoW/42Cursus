@@ -6,15 +6,15 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 09:27:27 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:27:28 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/19 20:08:46 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-    void	*ptr;
+	void	*ptr;
 
 	ptr = malloc(nmemb * size);
 	if (ptr == 0)
