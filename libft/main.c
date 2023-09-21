@@ -354,3 +354,57 @@ int	main()
 	return (0);
 }
 */
+/*
+#include <stdio.h>
+
+int main()
+{
+	char *s1 = "Hello there";
+	char *set = "He";
+	char *ptr;
+
+	ptr = ft_strtrim(s1, set);
+	printf("ft_strtrim: %s\n", ptr);
+	free(ptr);
+	return (0);
+}
+*/
+/*
+#include <stdio.h>
+
+int	main()
+{
+	char const	s1[] = "Hello ";
+	char const	s2[] = "there";
+	char		*dest;
+
+	dest = ft_strjoin(s1, s2);
+	printf("%s\n", dest);
+	free(dest);
+	return (0);
+}
+*/
+/*
+#include <stdio.h>
+
+int    main(void)
+{
+	char const    string[] = "aaaaaacMONDONGOacacC";
+	char        **separated;
+	size_t        i;
+
+	i = 0;
+	separated = ft_split(string, 'c');
+	if (separated == NULL) {
+		printf("Memory allocation failed.\n");
+		return 1;
+	}
+	while (separated[i])
+	{
+	  printf("%s\n", separated[i]);
+	  i++;
+	}
+	free(separated);
+	return (0);
+	}
+*/

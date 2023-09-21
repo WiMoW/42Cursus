@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+         #
+#    By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/19 09:59:21 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/21 10:58:32 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,12 +38,13 @@ MY_SOURCES = ft_atoi.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			ft_calloc.c \
+			ft_split.c \
 
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
 
 CC = cc
 
-CFLAGS += -lbsd -Wall -Wextra -Werror 
+CFLAGS += -Wall -Wextra -Werror 
 
 REMOVE = rm -f
 
