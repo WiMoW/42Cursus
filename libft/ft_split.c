@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 11:35:49 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/21 10:54:46 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/21 22:22:19 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,11 @@ static size_t	ft_wordcount(const char *s, char c, size_t *index)
 	{
 		while ((s[*index] == c) && (s[*index] != '\0'))
 			(*index)++;
-		if (s[*index] != '\0')
-		{
+		if ((s[*index] != c) || ((s[*index] != '\0')
+				&& ((s[*index] - 1) == c)))
 			count++;
-			while ((s[*index] != c) && (s[*index] != '\0'))
-				(*index)++;
-		}
+		while ((s[*index] != c) && (s[*index] != '\0'))
+			(*index)++;
 	}
 	*index = 0;
 	return (count);
@@ -97,7 +96,7 @@ char	**ft_split(char const *s, char c)
 	vars.k = 0;
 	vars.words = ft_wordcount(s, c, &vars.index);
 	separated = malloc((vars.words + 1) * sizeof(char *));
-	if (!separated || (vars.words == 0))
+	if (!separated || (vars.words == 0) || (c == '\0'))
 		return (NULL);
 	while (s[vars.index])
 	{
@@ -115,17 +114,16 @@ char	**ft_split(char const *s, char c)
 	return (separated);
 }
 
-/*
 #include <stdio.h>
 
 int    main(void)
 {
-	char const    string[] = "aaaaaacMONDONGOacacC";
+	char const    string[] = "hello!";
 	char        **separated;
 	size_t        i;
 
 	i = 0;
-	separated = ft_split(string, 'c');
+	separated = ft_split(string, ' ');
 	if (separated == NULL) {
 		printf("Memory allocation failed.\n");
 		return 1;
@@ -138,4 +136,3 @@ int    main(void)
 	free(separated);
 	return (0);
 	}
-*/
