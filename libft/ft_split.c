@@ -3,123 +3,104 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/19 11:35:49 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/21 22:22:19 by dacaball         ###   ########.fr       */
+/*   Created: 2023/09/22 13:32:23 by dacaball          #+#    #+#             */
+/*   Updated: 2023/09/22 16:46:02 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 #include <stdlib.h>
 
-struct s_vars {
-	size_t	i;
-	size_t	j;
-	size_t	k;
-	size_t	index;
-	size_t	size;
-	size_t	words;
-};
-
-static size_t	ft_wordcount(const char *s, char c, size_t *index)
+static size_t	ft_wordcount(const char *s, char c)
 {
-	int	count;
+	size_t	i;
+	size_t	count;
+	char	last;
 
 	count = 0;
-	while (s[*index] != '\0')
+	i = 0;
+	last = c;
+	while ((s[i]) != '\0')
 	{
-		while ((s[*index] == c) && (s[*index] != '\0'))
-			(*index)++;
-		if ((s[*index] != c) || ((s[*index] != '\0')
-				&& ((s[*index] - 1) == c)))
+		if ((last == c) && ((s[i]) != c))
 			count++;
-		while ((s[*index] != c) && (s[*index] != '\0'))
-			(*index)++;
+		last = s[i];
+		i++;
 	}
-	*index = 0;
 	return (count);
 }
 
-static size_t	wordsize(char const *s, char c, size_t *index)
+static size_t	ft_strsublen(const char *str, char c)
 {
-	size_t	size;
+	size_t	i;
 
-	size = 0;
-	while (s[*index] == c)
-		(*index)++;
-	while ((s[*index] != '\0') && (s[*index] != c))
-	{
-		size++;
-		(*index)++;
-	}
-	return (size);
+	i = 0;
+	while ((str[i] != '\0') && (str[i] != c))
+		i++;
+	return (i);
 }
 
-void	ft_freeseparated(char **separated, size_t *i, size_t *j)
+static char	**ft_freeseparated(char **separated, size_t j)
 {
-	if (!separated[(*j)])
+	while (j >= 0)
 	{
-		while ((*i) < (*j))
-		{
-			free(separated[(*i)]);
-			(*i)++;
-		}
-		free(separated);
+		free(separated[(j)]);
+		j--;
 	}
+	free(separated);
+	return (NULL);
 }
 
-void	ft_cpywrd(char **separated, const char *s, struct s_vars *vars, char c)
+static size_t	ft_cpywrd(char **separated, const char *s, size_t j, size_t len)
 {
-	while ((vars->k) < (vars->size))
+	size_t	k;
+
+	k = 0;
+	while (k < len)
 	{
-		if (s[(vars->i)] == c)
-			(vars->i)++;
-		else
-		{
-			separated[(vars->j)][(vars->k)] = s[(vars->i)];
-			(vars->k)++;
-			(vars->i)++;
-		}
+		separated[j][k] = s[k];
+		k++;
 	}
+	separated[j][k] = '\0';
+	return (k);
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split(const char *s, char c)
 {
-	struct s_vars	vars;
-	char			**separated;
+	size_t	i;
+	size_t	j;
+	char	**separated;
+	size_t	sublen;
 
-	vars.index = 0;
-	vars.i = 0;
-	vars.j = 0;
-	vars.k = 0;
-	vars.words = ft_wordcount(s, c, &vars.index);
-	separated = malloc((vars.words + 1) * sizeof(char *));
-	if (!separated || (vars.words == 0) || (c == '\0'))
+	i = 0;
+	j = 0;
+	separated = malloc((ft_wordcount(s, c) + 1) * sizeof(char *));
+	if (!separated || (c == '\0'))
 		return (NULL);
-	while (s[vars.index])
+	while (s[i])
 	{
-		vars.size = (wordsize(s, c, &vars.index));
-		while ((s[vars.index] == c) && (s[vars.index]))
-			vars.index++;
-		separated[vars.j] = malloc((vars.size + 1) * sizeof(char));
-		ft_freeseparated(separated, &vars.i, &vars.j);
-		ft_cpywrd(separated, s, &vars, c);
-		separated[vars.j][vars.k] = '\0';
-		vars.k = 0;
-		vars.i++;
-		vars.j++;
+		while (s[i] == c)
+			i++;
+		if (s[i] == '\0')
+			break ;
+		sublen = ft_strsublen(s + i, c);
+		separated[j] = malloc((sublen + 1) * sizeof(char));
+		if (!separated[j])
+			return (ft_freeseparated(separated, j));
+		i += ft_cpywrd(separated, s + i, j, sublen);
+		j++;
 	}
+	separated[j] = NULL;
 	return (separated);
 }
-
+/*
 #include <stdio.h>
 
 int    main(void)
 {
-	char const    string[] = "hello!";
-	char        **separated;
+	char	*string = "Hola k ase";
+	char	**separated;
 	size_t        i;
 
 	i = 0;
@@ -135,4 +116,5 @@ int    main(void)
 	}
 	free(separated);
 	return (0);
-	}
+}
+*/
