@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:45:38 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:28:01 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/23 15:05:07 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,22 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
-	const char	*string;
+	size_t	i;
+	char	*string;
 
 	i = 0;
-	string = s;
+	string = (char *)s;
 	while (i < n)
 	{
-		if (string[i] == c)
-			return ((void *)(string + 1));
+		if (*(string + i) == (char)c)
+			return (string + i);
 		i++;
 	}
 	return (0);
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 #include <stddef.h>
@@ -42,11 +43,12 @@ int	main()
 	char	*ptr;
 	char	c;
 
-	str = "Hello there";
-	c = 'e';
+	str = "bonjour";
+	c = 'j';
 	ptr = memchr(str, c, 5);
 	printf("memchr: %s\n", ptr);
 	ptr = ft_memchr(str, c, 5);
 	printf("ft_memchr: %s\n", ptr);
 	return (0);
-}*/
+}
+*/

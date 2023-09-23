@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 13:32:23 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/22 16:46:02 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/23 13:20:38 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,13 @@ static size_t	ft_strsublen(const char *str, char c)
 
 static char	**ft_freeseparated(char **separated, size_t j)
 {
-	while (j >= 0)
+	size_t	i;
+
+	i = 0;
+	while (i < j)
 	{
-		free(separated[(j)]);
-		j--;
+		free(separated[i]);
+		i++;
 	}
 	free(separated);
 	return (NULL);
@@ -76,7 +79,7 @@ char	**ft_split(const char *s, char c)
 	i = 0;
 	j = 0;
 	separated = malloc((ft_wordcount(s, c) + 1) * sizeof(char *));
-	if (!separated || (c == '\0'))
+	if (!separated)
 		return (NULL);
 	while (s[i])
 	{
@@ -99,12 +102,12 @@ char	**ft_split(const char *s, char c)
 
 int    main(void)
 {
-	char	*string = "Hola k ase";
+	char	*string = "\0aa\0bbb";
 	char	**separated;
 	size_t        i;
 
 	i = 0;
-	separated = ft_split(string, ' ');
+	separated = ft_split(string, '\0');
 	if (separated == NULL) {
 		printf("Memory allocation failed.\n");
 		return 1;
