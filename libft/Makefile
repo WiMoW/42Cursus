@@ -6,7 +6,7 @@
 #    By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/21 10:58:32 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/25 20:10:55 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ MY_SOURCES = ft_atoi.c \
 			ft_toupper.c \
 			ft_calloc.c \
 			ft_split.c \
+			ft_itoa.c \
 
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
 

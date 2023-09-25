@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:39:42 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:28:51 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/25 17:32:20 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (i + ft_strlen(src));
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 #include <stddef.h>
@@ -53,4 +54,5 @@ int	main()
 	printf("strlcat: %lu\n", strlcat(dst, src, size));
 	printf("ft_strlcat: %lu\n", ft_strlcat(dst, src, size));
 	return (0);
-}*/
+}
+*/
