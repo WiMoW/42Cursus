@@ -6,13 +6,29 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 15:37:24 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/26 11:16:11 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 11:23:47 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <limits.h>
 #include "libft.h"
+
+char	*ft_mystrdup(const char *s1)
+{
+	int		i;
+	char	*ptr;
+
+	i = 0;
+	ptr = malloc(sizeof(char) * 13);
+	while (s1[i] != '\0')
+	{
+		ptr[i] = s1[i];
+		i++;
+	}
+	ptr[i] = '\0';
+	return (ptr);
+}
 
 static char	*ft_allocmemory(size_t size, int n)
 {
@@ -65,8 +81,8 @@ char	*ft_itoa(int n)
 	int			i;
 
 	size = 0;
-	//if (n == -2147483648)
-	//	return (ft_strdup("-2147483648"));
+	if (n == -2147483648)
+		return (ft_mystrdup("-2147483648"));
 	if (n >= 0)
 		aux = n;
 	if (n < 0)
@@ -86,7 +102,7 @@ char	*ft_itoa(int n)
 	return (converted);
 }
 
-
+/*
 #include <stdio.h>
 
 int	main()
@@ -97,3 +113,4 @@ int	main()
 	printf("%s\n", converted);
 	return (0);
 }
+*/
