@@ -6,12 +6,13 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 15:37:24 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/25 20:42:05 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 02:13:59 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <limits.h>
+#include "libft.h"
 
 static char	*ft_allocmemory(size_t size, int n)
 {
@@ -64,6 +65,8 @@ char	*ft_itoa(int n)
 	int		i;
 
 	size = 0;
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	if (n >= 0)
 		aux = n;
 	if (n < 0)
@@ -83,14 +86,15 @@ char	*ft_itoa(int n)
 	return (converted);
 }
 
-
+/*
 #include <stdio.h>
 
 int	main()
 {
 	char	*converted;
 
-	converted = ft_itoa(-2147483648);
+	converted = ft_itoa(-2147483648LL);
 	printf("%s\n", converted);
 	return (0);
 }
+*/
