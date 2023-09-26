@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:20:29 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/26 17:20:27 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 17:21:41 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[i] = '\0';
 	return (ptr);
 }
+
 /*
 #include <stdio.h>
 

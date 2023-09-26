@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:39:08 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/26 17:01:46 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 17:38:29 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ char	*ft_strchr(const char *s, int c)
 	if ((unsigned char)c == 0)
 		return ((char *)(s + i));
 	return (0);
-	
 }
 /*
 #include <stdio.h>
