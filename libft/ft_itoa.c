@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 15:37:24 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/26 02:13:59 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 11:16:11 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,14 +59,14 @@ static char	*ft_writenum(char *converted, int n, int i)
 
 char	*ft_itoa(int n)
 {
-	size_t	size;
-	int		aux;
-	char	*converted;
-	int		i;
+	size_t		size;
+	long int	aux;
+	char		*converted;
+	int			i;
 
 	size = 0;
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
+	//if (n == -2147483648)
+	//	return (ft_strdup("-2147483648"));
 	if (n >= 0)
 		aux = n;
 	if (n < 0)
@@ -86,7 +86,7 @@ char	*ft_itoa(int n)
 	return (converted);
 }
 
-/*
+
 #include <stdio.h>
 
 int	main()
@@ -97,4 +97,3 @@ int	main()
 	printf("%s\n", converted);
 	return (0);
 }
-*/
