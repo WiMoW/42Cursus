@@ -6,7 +6,7 @@
 #    By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/26 11:39:15 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/26 15:02:10 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,8 @@ MY_SOURCES = ft_atoi.c \
 			ft_striteri.c \
 			ft_putchar_fd.c \
 			ft_putstr_fd.c \
+			ft_putendl_fd.c \
+			ft_putnbr_fd.c \
 
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
 
