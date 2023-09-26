@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:46:03 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:28:05 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 15:36:19 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t		i;
-	const char	*str1;
-	const char	*str2;
+	size_t				i;
+	unsigned const char	*str1;
+	unsigned const char	*str2;
 
 	str1 = s1;
 	str2 = s2;

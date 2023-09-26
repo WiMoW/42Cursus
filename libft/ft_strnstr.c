@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:41:03 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:29:10 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 15:42:54 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,15 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	j = 0;
+	if (!big)
+	{
+		i = big[-1];
+		return (0);
+	}
+	if (*little == '\0')
+		return ((char *)big);
+	if (len == 0)
+		return (0);
 	while ((big[i] != '\0') && (i < len))
 	{
 		while ((big[i + j] == little[j])

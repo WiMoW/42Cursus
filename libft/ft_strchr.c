@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:39:08 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:28:31 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 17:01:46 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,21 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	while (s[i] != '\0' && s[i] != c)
+	while (s[i])
+	{
+		if (s[i] == (unsigned char)c)
+			return ((char *)(s + i));
 		i++;
-	if (s[i] == c)
-		return ((char *)s + i);
-	else
-		return (0);
+	}
+	if ((unsigned char)c == 0)
+		return ((char *)(s + i));
+	return (0);
+	
 }
-
-/*#include <stdio.h>
-#include <ctype.h>
-#include <string.h>
-#include <stddef.h>
-#include <strings.h>
+/*
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "libft.h"
 
 int	main()
@@ -37,11 +38,12 @@ int	main()
 	char	*ptr;
 	int		c;
 
-	str = "Hello there";
-	c = 'a';
+	str = "teste";
+	c = '\0';
 	ptr = strchr(str, c);
 	printf("strchr: %s\n", ptr);
 	ptr = ft_strchr(str, c);
 	printf("ft_strchr: %s\n", ptr);
 	return (0);
-}*/
+}
+*/

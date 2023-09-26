@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 09:59:29 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:27:04 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 15:33:44 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_atoi(const char *str)
 	result = 0;
 	i = 0;
 	sign = 1;
-	while (str[i] == ' ')
+	while ((str[i] == 32) || ((str[i] >= 9) && (str[i] <= 13)))
 		i++;
 	if ((str[i] == '-') || (str[i] == '+'))
 	{
