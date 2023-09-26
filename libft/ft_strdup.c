@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:20:41 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:31:18 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 11:51:46 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_strdup(const char *s1)
 	char	*ptr;
 
 	i = 0;
-	ptr = malloc(sizeof(s1));
+	ptr = malloc(sizeof(const char) * (ft_strlen(s1) + 1));
+	if (ptr == NULL)
+		return (ptr);
 	while (s1[i] != '\0')
 	{
 		ptr[i] = s1[i];

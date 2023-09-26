@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 01:44:52 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/26 01:47:33 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/26 11:55:34 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void	ft_putstr_fd(char *s, int fd)
 	size_t	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (*(s + i) != '\0')
 	{
-		write(fd, s[i], 1);
+		write(fd, s + i, 1);
 		i++;
 	}
 }
