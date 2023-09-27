@@ -3,14 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+         #
+#    By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/26 15:02:10 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/27 15:45:23 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+BONUS_NAME = .bonus
 
 MY_SOURCES = ft_atoi.c \
 			ft_bzero.c \
@@ -49,6 +50,10 @@ MY_SOURCES = ft_atoi.c \
 
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
 
+MY_BONUS = ft_lstnew.c \
+
+BONUS_OBJS = $(MY_BONUS:.c=.o)
+
 CC = cc
 
 CFLAGS += -Wall -Wextra -Werror 
@@ -60,10 +65,18 @@ all: $(NAME)
 $(NAME): $(MY_OBJECTS)
 	ar rcs $(NAME) $(MY_OBJECTS)
 
+bonus: $(BONUS_NAME)
+
 clean: 
-	$(REMOVE) $(MY_OBJECTS)
+	$(REMOVE) $(OBJECTS) $(BONUS_OBJS)
 
 fclean: clean
-	$(REMOVE) $(NAME)
+	$(REMOVE) $(NAME) $(BONUS_NAME)
 
 re: fclean all
+
+$(BONUS_NAME): $(OBJECTS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJECTS) $(BONUS_OBJS)
+	ar rcs $(BONUS_NAME) $(OBJECTS) $(BONUS_OBJS)
+
+.PHONY: all clean fclean re
