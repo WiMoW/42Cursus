@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 09:19:18 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/27 15:36:09 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/27 23:47:31 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ typedef struct s_list
 }					t_list;
 
 t_list	*ft_lstnew(void *content);
+t_list	*ft_lstlast(t_list *lst);
 
 int		ft_toupper(int c);
 int		ft_tolower(int c);
@@ -32,6 +33,7 @@ int		ft_isprint(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_lstsize(t_list *lst);
 
 void	ft_bzero(void *s, size_t n);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
@@ -39,6 +41,8 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_back(t_list **lst, t_list *new);
 
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t n);

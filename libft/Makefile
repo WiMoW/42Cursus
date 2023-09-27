@@ -6,7 +6,7 @@
 #    By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/27 15:45:23 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/27 23:47:46 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,6 +51,12 @@ MY_SOURCES = ft_atoi.c \
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
 
 MY_BONUS = ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		
+		
 
 BONUS_OBJS = $(MY_BONUS:.c=.o)
 
