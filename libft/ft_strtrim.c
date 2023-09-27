@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 18:03:52 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/26 22:47:20 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/27 10:20:55 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, i, j - i + 1));
 }
 
-
 /*
 #include <stdio.h>
 
 int main()
 {
-	char *s1 = "ceceHolaceeec";
-	char *set = "ce";
+	char *s1 = "abcd";
+	char *set = "";
 	char *ptr;
 
 	ptr = ft_strtrim(s1, set);

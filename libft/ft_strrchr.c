@@ -3,28 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:41:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/26 17:05:29 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/27 10:19:47 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (s[i])
-		i++;
-	while (i >= 0 && s[i] != (unsigned char)c)
+	if(!s)
+		return(0);
+	i = ft_strlen(s);
+	while (i > 0 && s[i] != (unsigned char)c)
 		i--;
 	if (s[i] == (unsigned char)c)
 		return ((char *)(s + i));
 	return (0);
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 #include <stddef.h>
@@ -38,11 +42,12 @@ int	main()
 	char	*ptr;
 	int		c;
 
-	str = "Hello there";
-	c = 'e';
+	str = "teste";
+	c = 'x';
 	ptr = strrchr(str, c);
 	printf("strrchr: %s\n", ptr);
 	ptr = ft_strrchr(str, c);
 	printf("ft_strrchr: %s\n", ptr);
 	return (0);
-}*/
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 13:20:47 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/26 15:08:45 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/27 09:42:20 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	else if (n > 9)
 	{
-		ft_putnbr_fd(n/10, fd);
+		ft_putnbr_fd(n / 10, fd);
 		ft_putchar_fd((char)(n % 10 + '0'), fd);
 	}
 	else
