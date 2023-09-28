@@ -6,7 +6,7 @@
 #    By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/28 01:44:11 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/28 11:37:10 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,6 +58,7 @@ MY_BONUS = ft_lstnew.c \
 		ft_lstdelone.c \
 		ft_lstclear.c \
 		ft_lstiter.c \
+		ft_lstmap.c \
 		
 
 BONUS_OBJS = $(MY_BONUS:.c=.o)
