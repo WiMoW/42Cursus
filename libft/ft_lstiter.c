@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 01:40:34 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/28 01:43:09 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/29 11:00:49 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst)
-		return;
+		return ;
 	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;
-	}		
+	}
 }

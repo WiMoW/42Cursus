@@ -6,11 +6,12 @@
 #    By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 11:33:47 by dacaball          #+#    #+#              #
-#    Updated: 2023/09/28 11:37:10 by dacaball         ###   ########.fr        #
+#    Updated: 2023/09/29 11:14:25 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+
 BONUS_NAME = .bonus
 
 MY_SOURCES = ft_atoi.c \
@@ -60,7 +61,6 @@ MY_BONUS = ft_lstnew.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
 		
-
 BONUS_OBJS = $(MY_BONUS:.c=.o)
 
 CC = cc
@@ -77,15 +77,15 @@ $(NAME): $(MY_OBJECTS)
 bonus: $(BONUS_NAME)
 
 clean: 
-	$(REMOVE) $(OBJECTS) $(BONUS_OBJS)
+	$(REMOVE) $(MY_OBJECTS) $(BONUS_OBJS)
 
 fclean: clean
 	$(REMOVE) $(NAME) $(BONUS_NAME)
 
 re: fclean all
 
-$(BONUS_NAME): $(OBJECTS) $(BONUS_OBJS)
-	ar rcs $(NAME) $(OBJECTS) $(BONUS_OBJS)
-	ar rcs $(BONUS_NAME) $(OBJECTS) $(BONUS_OBJS)
+$(BONUS_NAME): $(MY_OBJECTS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(MY_OBJECTS) $(BONUS_OBJS)
+	ar rcs $(BONUS_NAME) $(MY_OBJECTS) $(BONUS_OBJS)
 
 .PHONY: all clean fclean re

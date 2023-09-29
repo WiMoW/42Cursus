@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 00:59:27 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/28 01:18:07 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/29 10:58:21 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!del)
-		return;
+		return ;
 	if (lst)
 	{
 		del(lst->content);

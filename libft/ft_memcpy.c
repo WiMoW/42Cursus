@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 12:00:13 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/19 09:28:12 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/29 11:29:09 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,21 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char		*destination;
 	const char	*source;
 
+	if (!dst || !src)
+		return (NULL);
 	destination = dst;
 	source = src;
 	i = 0;
 	while (i < n)
 	{
-		destination[i] = source[i];
+		destination [i] = source[i];
 		i++;
 	}
-	return (destination);
+	return (dst);
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 #include <stddef.h>
@@ -47,4 +50,5 @@ int main()
 	ft_memcpy(str1, str2, 5);
 	printf("str1 after ft_memcpy: %s\n", str1);
     return	(0);
-}*/
+}
+*/

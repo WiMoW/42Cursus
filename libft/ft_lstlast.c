@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 23:34:58 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/28 19:32:10 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/29 11:31:40 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,9 @@ t_list	*ft_lstlast(t_list *lst)
 
 int	main()
 {
-	int		var1, var2, var3;
+	int		var1;
+	int		var2;
+	int		var3;
 	t_list	*root;
 	t_list	*new;
 	
