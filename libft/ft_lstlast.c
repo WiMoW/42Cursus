@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 23:34:58 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/29 11:31:40 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/09/29 11:37:43 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,11 @@ int	main()
 	root->next = ft_lstnew(&var2);
 	root->next->next = ft_lstnew(&var3);
 	
-	//Printing content of each nonde using *current
+	//Printing content of last node using *current
 	t_list	*current;
 	current = ft_lstlast(root);
-	printf("El contenido al que apunta el último nodo es: %d\n", *(int *)current->content);
+	printf("El contenido al que apunta el último nodo es:
+		 %d\n", *(int *)current->content);
 	
 	//Free the memory of each node
 	t_list	*nextnode;
