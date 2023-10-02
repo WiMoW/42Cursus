@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 11:41:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/27 15:08:18 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/02 13:08:35 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	i;
 
 	i = 0;
-	if (!s)
-		return (0);
 	i = ft_strlen(s);
 	while (i > 0 && s[i] != (unsigned char)c)
 		i--;

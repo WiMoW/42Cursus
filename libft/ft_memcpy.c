@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 12:00:13 by dacaball          #+#    #+#             */
-/*   Updated: 2023/09/29 11:29:09 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/02 13:04:58 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char		*destination;
 	const char	*source;
 
-	if (!dst || !src)
+	if (!dst && !src)
 		return (NULL);
 	destination = dst;
 	source = src;
