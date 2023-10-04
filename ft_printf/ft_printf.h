@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:16 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/03 16:02:49 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/03 21:58:20 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,10 @@
 # include <unistd.h>
 # include <stdarg.h>
 
-typedef struct s_map{
-    char    *key;
-    void    *value;
-} t_map;
-
 int	ft_printf(char const *str, ...);
 
-
+void	ft_printstr(char *str, int *i);
+void	ft_printchar_fd(char chr, int *i);
+void	ft_printhexlow(unsigned int	decimal, int *i);
 
 #endif

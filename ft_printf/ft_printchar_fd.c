@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printptr.c                                      :+:      :+:    :+:   */
+/*   ft_printchar_fd..c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 20:35:02 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/03 20:36:18 by dacaball         ###   ########.fr       */
+/*   Created: 2023/10/03 20:05:09 by dacaball          #+#    #+#             */
+/*   Updated: 2023/10/03 20:18:21 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printptr(size_t	ptr, int *i)
+void	ft_printchar_fd(char chr, int *i)
 {
-	
+	write(1, &chr, 1);
+	*i += 1;
 }

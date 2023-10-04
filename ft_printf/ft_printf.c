@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf2.c                                       :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:10 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/03 16:27:29 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/03 21:56:13 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,20 +18,20 @@ static void	check_format(char chr, va_list args, int *i)
 		ft_printchar_fd(va_arg(args, int), i);
 	else if (chr == 's')
 		ft_printstr(va_arg(args, char *), i);
-	else if (chr == 'p')
+	/*else if (chr == 'p')
 		ft_printptr(va_arg(args, size_t), i);
 	else if (chr == 'd')
 		ft_printdec(va_arg(args, int), i);
 	else if (chr == 'i')
 		ft_printdec(va_arg(args, int), i);
 	else if (chr == 'u')
-		ft_printdec(va_arg(args, unsigned int), i);
+		ft_printdec(va_arg(args, unsigned int), i);*/
 	else if (chr == 'x')
 		ft_printhexlow(va_arg(args, unsigned int), i);
-	else if (chr == 'X')
+	/*else if (chr == 'X')
 		ft_printhexup(va_arg(args, unsigned int), i);
 	else if (chr == '%')
-		ft_printchar_fd('%', i);
+		ft_printchar_fd('%', i);*/
 }		
 
 int	ft_printf(char const *to_print, ...)
@@ -46,8 +46,22 @@ int	ft_printf(char const *to_print, ...)
 		if (to_print[i] == '%')
 			check_format(*(++to_print), args, &i);
 		else
-			putchar_fd(*to_print, &i);
+			ft_printchar_fd(*to_print, &i);
+		to_print++;
 	}
 	va_end(args);
 	return (i);
+}
+
+#include <stdio.h>
+
+int	main()
+{
+	unsigned int i;
+
+	i = 6574345;
+	printf("El hexadecimal es: %x\n", i);
+	ft_printf("El hexadecimal es: %x\n", &i);
+
+	return (0);
 }
