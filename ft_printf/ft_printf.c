@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:10 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/03 21:56:13 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:45:19 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,23 +34,23 @@ static void	check_format(char chr, va_list args, int *i)
 		ft_printchar_fd('%', i);*/
 }		
 
-int	ft_printf(char const *to_print, ...)
+int    ft_printf(char const *to_print, ...)
 {
-	va_list	args;
-	int		i;
+    va_list    args;
+    int        i;
 
-	i = 0;
-	va_start(args, to_print);
-	while (to_print)
-	{
-		if (to_print[i] == '%')
-			check_format(*(++to_print), args, &i);
-		else
-			ft_printchar_fd(*to_print, &i);
-		to_print++;
-	}
-	va_end(args);
-	return (i);
+    i = 0;
+    va_start(args, to_print);
+    while (*to_print)
+    {
+        if (*to_print == '%')
+            check_format(*(++to_print), args, &i);
+        else
+            ft_printchar_fd(*to_print, &i);
+        to_print++;
+    }
+    va_end(args);
+    return (i);
 }
 
 #include <stdio.h>
@@ -59,9 +59,9 @@ int	main()
 {
 	unsigned int i;
 
-	i = 6574345;
+	i = 74345;
 	printf("El hexadecimal es: %x\n", i);
-	ft_printf("El hexadecimal es: %x\n", &i);
+	ft_printf("El hexadecimal es: %x\n", i);
 
 	return (0);
 }
