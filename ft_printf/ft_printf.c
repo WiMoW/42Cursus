@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:10 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/04 11:45:19 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/04 22:25:21 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ static void	check_format(char chr, va_list args, int *i)
 		ft_printdec(va_arg(args, unsigned int), i);*/
 	else if (chr == 'x')
 		ft_printhexlow(va_arg(args, unsigned int), i);
-	/*else if (chr == 'X')
+	else if (chr == 'X')
 		ft_printhexup(va_arg(args, unsigned int), i);
-	else if (chr == '%')
+	/*else if (chr == '%')
 		ft_printchar_fd('%', i);*/
 }		
 
@@ -59,7 +59,7 @@ int	main()
 {
 	unsigned int i;
 
-	i = 74345;
+	i = 16;
 	printf("El hexadecimal es: %x\n", i);
 	ft_printf("El hexadecimal es: %x\n", i);
 
