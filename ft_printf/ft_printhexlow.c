@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 21:12:46 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/04 22:24:53 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/04 22:27:28 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 void	ft_printhexlow(unsigned int	decimal, int *i)
 {
     char const	base_hex[] = "0123456789abcdef";
-	
-	if (decimal >= 16)
+	if (decimal > 16)
 	{
 		ft_printhexlow(decimal / 16, i);
 	}
