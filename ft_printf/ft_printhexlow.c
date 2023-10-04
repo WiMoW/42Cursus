@@ -5,17 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 21:12:46 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/04 22:27:28 by dacaball         ###   ########.fr       */
+/*   Created: 2023/10/04 22:30:07 by dacaball          #+#    #+#             */
+/*   Updated: 2023/10/04 22:30:28 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printhexlow(unsigned int	decimal, int *i)
+void	ft_printhexlow(unsigned int decimal, int *i)
 {
-    char const	base_hex[] = "0123456789abcdef";
-	if (decimal > 16)
+	char const	base_hex[] = "0123456789abcdef";
+
+	if (decimal >= 16)
 	{
 		ft_printhexlow(decimal / 16, i);
 	}
