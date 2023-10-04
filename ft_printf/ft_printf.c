@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:10 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/04 22:26:51 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/04 22:46:10 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ static void	check_format(char chr, va_list args, int *i)
 		ft_printdec(va_arg(args, unsigned int), i);*/
 	else if (chr == 'x')
 		ft_printhexlow(va_arg(args, unsigned int), i);
-	/*else if (chr == 'X')
+	else if (chr == 'X')
 		ft_printhexup(va_arg(args, unsigned int), i);
 	else if (chr == '%')
-		ft_printchar_fd('%', i);*/
+		ft_printchar_fd('%', i);
 }		
 
 int    ft_printf(char const *to_print, ...)
@@ -57,11 +57,10 @@ int    ft_printf(char const *to_print, ...)
 
 int	main()
 {
-	unsigned int i;
+	const char	string[] = "Hola mi siela";
 
-	i = 74345;
-	printf("El hexadecimal es: %x\n", i);
-	ft_printf("El hexadecimal es: %x\n", i);
+	printf("El hexadecimal es: %s\n", string);
+	ft_printf("El hexadecimal es: %s\n", string);
 
 	return (0);
 }
