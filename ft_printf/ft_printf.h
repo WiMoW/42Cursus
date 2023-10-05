@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:16 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/04 22:13:21 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/05 11:41:00 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,12 @@
 # include <unistd.h>
 # include <stdarg.h>
 
-int	ft_printf(char const *str, ...);
+int		ft_printf(char const *str, ...);
 
 void	ft_printstr(char *str, int *i);
 void	ft_printchar_fd(char chr, int *i);
-void	ft_printhexlow(unsigned int	decimal, int *i);
-void	ft_printhexup(unsigned int	decimal, int *i);
+void	ft_printhexlow(size_t decimal, int *i);
+void	ft_printhexup(size_t decimal, int *i);
+void	ft_printptr(size_t	ptr, int *i);
 
 #endif

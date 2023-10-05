@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printhexup.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 13:31:14 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/04 22:30:18 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/05 11:41:14 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printhexup(unsigned int decimal, int *i)
+void	ft_printhexup(size_t decimal, int *i)
 {
 	char const	base_hex[] = "0123456789ABCDEF";
 
