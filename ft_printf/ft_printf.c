@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:10 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/05 11:43:50 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/05 17:06:34 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ static void	check_format(char chr, va_list args, int *i)
 		ft_printstr(va_arg(args, char *), i);
 	else if (chr == 'p')
 		ft_printptr(va_arg(args, size_t), i);
-	/*else if (chr == 'd')
+	else if (chr == 'd')
 		ft_printdec(va_arg(args, int), i);
 	else if (chr == 'i')
 		ft_printdec(va_arg(args, int), i);
 	else if (chr == 'u')
-		ft_printdec(va_arg(args, unsigned int), i);*/
+		ft_printunsigned(va_arg(args, unsigned int), i);
 	else if (chr == 'x')
 		ft_printhexlow(va_arg(args, size_t), i);
 	else if (chr == 'X')
@@ -57,11 +57,11 @@ int	ft_printf(char const *to_print, ...)
 
 int	main()
 {
-	int	*ptr;
 	int	i;
 
-	printf("%i\n", printf("El ptr es: %p\n", ptr));
-	printf("%i\n", ft_printf("El ptr es: %p\n", ptr));
+	i = -343647315;
+	printf("%i\n", printf("El ptr es: %u\n", i));
+	printf("%i\n", ft_printf("El ptr es: %u\n", i));
 
 	return (0);
 }

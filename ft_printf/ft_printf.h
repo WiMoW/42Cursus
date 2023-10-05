@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:16 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/05 11:41:00 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/05 17:06:19 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,7 @@ void	ft_printchar_fd(char chr, int *i);
 void	ft_printhexlow(size_t decimal, int *i);
 void	ft_printhexup(size_t decimal, int *i);
 void	ft_printptr(size_t	ptr, int *i);
+void	ft_printdec(int decimal, int *i);
+void	ft_printunsigned(unsigned int decimal, int *i);
 
 #endif
