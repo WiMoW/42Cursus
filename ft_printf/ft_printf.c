@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:10 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/05 17:06:34 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/05 17:11:37 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ int	ft_printf(char const *to_print, ...)
 	return (i);
 }
 
+/*
 #include <stdio.h>
 
 int	main()
@@ -65,3 +66,4 @@ int	main()
 
 	return (0);
 }
+*/
