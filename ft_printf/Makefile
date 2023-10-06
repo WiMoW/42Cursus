@@ -6,7 +6,7 @@
 #    By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/05 18:07:03 by dacaball          #+#    #+#              #
-#    Updated: 2023/10/05 18:19:34 by dacaball         ###   ########.fr        #
+#    Updated: 2023/10/06 01:50:16 by dacaball         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ MY_SOURCES = ft_printchar_fd.c \
 			ft_printptr.c \
 			ft_printstr.c \
 			ft_printunsigned.c \
+			ft_printf.c \
 			
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
 

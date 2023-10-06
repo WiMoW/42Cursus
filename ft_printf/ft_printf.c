@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:10 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/05 17:11:37 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/06 01:50:41 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,7 @@ int	ft_printf(char const *to_print, ...)
 	va_end(args);
 	return (i);
 }
-
-/*
+ /*
 #include <stdio.h>
 
 int	main()
@@ -62,7 +61,7 @@ int	main()
 
 	i = -343647315;
 	printf("%i\n", printf("El ptr es: %u\n", i));
-	printf("%i\n", ft_printf("El ptr es: %u\n", i));
+	ft_printf("%i\n", ft_printf("El ptr es: %u\n", i));
 
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:16 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/05 17:06:19 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/05 18:23:39 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_PRINTF_H
 # include <unistd.h>
 # include <stdarg.h>
+# include <stdlib.h>
 
 int		ft_printf(char const *str, ...);
 
