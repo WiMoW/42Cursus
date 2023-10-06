@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 20:19:18 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/05 17:11:54 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/06 11:25:43 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_printstr(char *str, int *i)
 {
-	if (!str)
+	if (str == NULL)
 	{
 		write(1, "(null)", 6);
-		i += 6;
+		*i += 6;
 		return ;
 	}
 	while (*str)

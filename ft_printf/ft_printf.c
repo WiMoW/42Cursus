@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:10 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/06 01:50:41 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/06 11:33:27 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ static void	check_format(char chr, va_list args, int *i)
 	else if (chr == 'p')
 		ft_printptr(va_arg(args, size_t), i);
 	else if (chr == 'd')
-		ft_printdec(va_arg(args, int), i);
+		ft_printdec(va_arg(args, long int), i);
 	else if (chr == 'i')
-		ft_printdec(va_arg(args, int), i);
+		ft_printdec(va_arg(args, long int), i);
 	else if (chr == 'u')
 		ft_printunsigned(va_arg(args, unsigned int), i);
 	else if (chr == 'x')
@@ -52,17 +52,13 @@ int	ft_printf(char const *to_print, ...)
 	va_end(args);
 	return (i);
 }
- /*
+
 #include <stdio.h>
 
 int	main()
 {
-	int	i;
-
-	i = -343647315;
-	printf("%i\n", printf("El ptr es: %u\n", i));
-	ft_printf("%i\n", ft_printf("El ptr es: %u\n", i));
+	printf("%i\n", printf("NULL %i NULL\n", -13145));
+	ft_printf("%i\n", ft_printf("NULL %i NULL\n", -13145));
 
 	return (0);
 }
-*/
