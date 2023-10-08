@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:23:10 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/06 11:33:27 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/10/08 13:12:56 by wimo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static void	check_format(char chr, va_list args, int *i)
 		ft_printhexup(va_arg(args, size_t), i);
 	else if (chr == '%')
 		ft_printchar_fd('%', i);
-}		
+}
 
 int	ft_printf(char const *to_print, ...)
 {
@@ -53,6 +53,7 @@ int	ft_printf(char const *to_print, ...)
 	return (i);
 }
 
+/*
 #include <stdio.h>
 
 int	main()
@@ -61,4 +62,4 @@ int	main()
 	ft_printf("%i\n", ft_printf("NULL %i NULL\n", -13145));
 
 	return (0);
-}
+}*/
