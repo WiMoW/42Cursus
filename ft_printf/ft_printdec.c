@@ -6,18 +6,14 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 16:24:57 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/08 13:13:50 by wimo             ###   ########.fr       */
+/*   Updated: 2023/10/09 10:48:33 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printdec(long int decimal, int *i)
+void	ft_printdec(long long int decimal, int *i)
 {
-	if (decimal == -2147483648)
-	{
-		write(1, "-2147483648", 11);
-	}
 	if (decimal < 0)
 	{
 		ft_printchar_fd('-', i);
