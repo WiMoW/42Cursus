@@ -1,32 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printdec.c                                      :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 16:24:57 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/11 13:52:36 by wimo             ###   ########.fr       */
+/*   Created: 2023/10/11 14:13:42 by dacaball          #+#    #+#             */
+/*   Updated: 2023/10/11 14:19:40 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-void	ft_printdec(long long int decimal, int *i)
+char    *get_next_line(int fd)
 {
-	if (decimal < 0)
-	{
-		ft_printchar_fd('-', i);
-		decimal = -decimal;
-		ft_printdec(decimal, i);
-	}
-	else if (decimal > 9)
-	{
-		ft_printdec(decimal / 10, i);
-		ft_printchar_fd((char)(decimal % 10 + '0'), i);
-	}
-	else
-	{
-		ft_printchar_fd((char)(decimal + '0'), i);
-	}
+    
 }
+
