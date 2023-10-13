@@ -5,13 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/11 14:13:42 by dacaball          #+#    #+#             */
-/*   Updated: 2023/10/11 14:19:40 by dacaball         ###   ########.fr       */
+/*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
+/*   Updated: 2023/10/12 16:35:09 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "get_next_line.h"
+#include <stdlib.h>
+
 char    *get_next_line(int fd)
 {
-    
+     
 }
 
