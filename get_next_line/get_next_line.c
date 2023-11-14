@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/14 00:27:42 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/14 13:31:38 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,10 +69,10 @@ char	*ft_read_line(char *buffer)
 	return (line);
 }
 
-char    *read_file(int fd, char *buffer)
+char	*read_file(int fd, char *buffer)
 {
-	char    *temp;
-	int     bytes_read;
+	char	*temp;
+	int		bytes_read;
 
 	if (!buffer)
 		buffer = ft_calloc(1, 1);
@@ -94,13 +94,14 @@ char    *read_file(int fd, char *buffer)
 	free (temp);
 	return (buffer);
 }
+//read(fd, 0, 0) < 0
 
-char    *get_next_line(int fd)
+char	*get_next_line(int fd)
 {
-	static char    *buffer;
-	char           *line;
+	static char	*buffer;
+	char		*line;
 
-	if(fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	buffer = read_file(fd, buffer);
 	if (!buffer)
@@ -110,6 +111,11 @@ char    *get_next_line(int fd)
 	return (line);
 }
 /*
+void leaks()
+{
+	system("leaks -q a.out");
+}
+
 int main() 
 {
 	int fd = open("Mondongo.txt", O_RDONLY);
@@ -125,7 +131,7 @@ int main()
 		if (line)
 			free(line);
 	}
-
+	atexit(leaks);
 	close(fd);
 
 	return 0;

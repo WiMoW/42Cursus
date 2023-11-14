@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 20:42:22 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/09 13:13:30 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/14 12:55:56 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,26 +26,26 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t		i;
 	size_t		j;
-	char		*ptr;
+	char		*str;
 
 	i = 0;
 	j = 0;
-	ptr = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	if (ptr == NULL)
+	str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (str == NULL)
 		return (NULL);
 	while (s1[i] != '\0')
 	{
-		ptr[i] = s1[i];
+		str[i] = s1[i];
 		i++;
 	}
 	while (s2[j] != '\0')
 	{
-		ptr[i] = s2[j];
+		str[i] = s2[j];
 		i++;
 		j++;
 	}
-	ptr[i] = '\0';
-	return (ptr);
+	str[i] = '\0';
+	return (str);
 }
 
 void	ft_bzero(void *s, size_t n)
