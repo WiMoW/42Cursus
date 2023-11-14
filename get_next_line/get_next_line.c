@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/14 00:05:37 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/14 00:27:42 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_next_line(char *buffer)
 	char	*line;
 
 	i = 0;
-	while (buffer[i] && buffer[i] != '\n')
+	while (buffer[i] && (buffer[i] != '\n'))
 		i++;
 	if (!buffer[i])
 	{
