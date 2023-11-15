@@ -1,4 +1,240 @@
-aaaaaaaaaa
-bbbbbbbbbb
-cccccccccc
-dddddddddd
+Hints and Tips Journal 
+
+The following Journal was sent to the Committee on Moral Climate from Dr. Claire R. 
+Langstrom. She was one of the investigators sent by that committee to the city of Xi. 
+
+The investigative team disappeared. A second expedition, from the Academy, consisting 
+of two men, was sent after the Moral Climate investigators disappeared. Those men 
+also disappeared. 
+
+Touchdown 
+
+We arrived. There was no sign, no movement, no Indication of any kind that the ancient Martian 
+city of XI was inhabited. But that was a ruse: Stendahl was here somewhere, wallowing in his 
+books. I have read about the legends of this place. The Martians believed it contained the great¬ 
+est force In the universe. Obviously it did not. Otherwise why would the Martians have died cut? I 
+wanted to explore as much of the city as I could on one energy charge. I decided to take only a 
+data recorder and a mapper with me, along with a helmet. 
+
+I landed near one of the canals, The water was clear and flowed faster than I thought It would. I 
+turned around and walked away from the canal toward high canyon walls. I could see Xi through 
+a breach in the canyon wall. Mo wonder this place stayed unexplored. It lay on the floor of a hid¬ 
+den canyon, perhaps With only one entrance. I noticed there were side routes branching to the 
+left and right, I will explore those later if I have time. 
+
+Transporter Building 
+
+! iome of the Martian machinery, though neglected for centuries, still worked. As I approached 
+the city buildings* their doers opened for me, I entered the first building on the right that I came 
+to. It contained a device that looked like my Rocket T s transporter. Unfortunately, the device was 
+locked. It seemed obvious to me that manipulating the nine tiles with Martian symbols on them 
+would operate the transporter. The same strange symbol framed the device. 
+
+Pome Building 
+
+While exploring the large Dome Building to the west of the Transporter Building, I found a con¬ 
+sole with Martian writing on It, Since I could not translate It without the Scanner, I went back 
+to the Rocket for it (I should have brought it with me from the startl). It translated the 
+Martian symbols on the console into numbers. And I recognized the Martian symbol for the 
+number 15. I had seen it before, repeated many times, on the tile grid In the Transporter 
+
+
+
+
+
+
+
+
+Building* This suggested the tile grid required the numbered tiles to be placed so that the 
+columns, rows, and diagonals add to 15* 
+
+Return to the Transporter Building 
+
+I returned to the Transporter Building, armed with the knowledge that the tile grid was a num¬ 
+ber puzzle. After using my scanner to translate the symbols displayed on the console in the 
+Pome Building, 1 learned that the tiles in this puzzle were arranged In numerical order in their 
+Initial positions. Tile numbers one through five were In order in a vertical column to the left of 
+the grid, and tiles six through nine were in order in a vertical column to the right of the grid. 
+
+To activate the Transporter Tube, all the rows, columns* and diagonals needed to add up to 15. I 
+attempted to solve the puzzle using logic. For example, I concluded that the number five needed 
+to go in the center space, and that the number one could not go In a corner. I will try to devise 
+a complete solution In my working notes. 
+
+Using the transporter, I was taken to the roof of the building, where a Martian Band Yacht was 
+moored. However, I found nothing on the Yacht except some stored images. This was odd, Why 
+was the transporter so carefully locked* if there was nothing of value,here? 
+
+Outside, I saw a ghost. I could net record It with the data recorder, Was it really there or was 
+It a figment of my imagination? It looked like a Martian, strolling through the city. It suddenly 
+appeared and then It just vanished. 
+
+Stendah! House 
+
+l explored the large building in the middle of the city. This was the house built by that moral 
+degenerate. Stendahl. If it were not for the scanner, I could never have made it through all six 
+rooms, or even from the first room to the second. To the naked eye and the unguarded mind, 
+there were no doors between one room and the next, But the scanner showed me that what 1 
+saw as impenetrable walls were illusions. The house was full of eerie sounds, ghostly projected 
+images, tricks, and traps. I found a crystal fragment inside a skull in one room. All of the doors 
+from room to room allowed passage In one direction only, never letting me retrace my path. I 
+could only go forward, always seemingly into a trap. Was Stendahl trying to protect his 
+accursed bocks, or was the house intended for more sinister purposes? 
+
+In the working notes, I have kept track of the steps that led me successf ully through t he house. 
+The library in this house was a scandal. It contained hundreds of banned books. Among them,« 
+
+
+found an Interesting book about a binary numbering system, I thought t could use this informa¬ 
+tion In the Jail because the force field in the Jail seemed to have been controlled by a binary lock. 
+
+Jail 
+
+A building on the north edge of the city contained a force field. It looked like it was built to be a 
+Jail. There was a Martian control panel on a pedestal next to it. The controls consisted of six 
+vertical bars. Each of them could have been either up or down. Some setting of the six bars 
+should shut the force field off. Fortunately, the book in the library of the Stendahl House helped 
+me figure this mechanism out. The code sequence was based on a variation of the binary number 
+system. Successfully moving all of them to the down position released the force field. 
+
+On the first move, only the left-most bar was moveable. On each successive move, only one other 
+bar besides the one just moved would move. I solved the problem by trial and error* using a sim¬ 
+ple rule: never move the same bar twice In a row. After 42 moves, all of the bars were In the 
+down position and the force field was deactivated. I moved most of the bars up and down many 
+times, but only at the end of the sequence were all six bars down, 
+
+Return to the Band Yacht 
+
+I merging from the Jail, I saw a Band Yacht flying over the city! It landed on the roof of the 
+hvmsporter Building. Was this another Martian hallucination from the past? Was this city, or 
+nomething in it, affecting my mind, causing me to see things that were not here? Was it a dis¬ 
+tortion of time itself? Or did a Band Yacht really go ty? 
+
+I could not resist returning to the Transporter Building and using the transporter again. There 
+• .renin I to be no change In the Sand Yacht moored there; but when I scanned Its control panels, 
+t ejw a hidden crystal fragment. Once I scanned it, the crystal was easy to obtain. It was 
+another part of a key. 
+
+Art Gallery 
+
+To the cast of the Jail was a building I call the Art Gallery because it had a number of Martian 
+paintings In It. It also had a sliding tile mechanism. The tiled image, when completed correctly* 
+was a map of the tunnels leading to the Archive that holds the Tx Hilt Hja, The tunnel map was 
+t he same as the tunnel maf that [ saw in the Bower Building. When the puzzle was solved, the 
+tap In the puzzle was located one square above the lower right corner rather than in the lower 
+r ighi rjrner itself. 61 nee this mocha n:s: scrambled the tiles randomly each time it was activat¬ 
+ed, I was not able to record a specific sequence of moves in my notes. 
+
+
+
+
+
+
+
+
+
+After completing the map, 1 discovered that there was a crystal hidden behind the map, which I 
+found by scanning, It could not be seen on the scanner until the map was correctly assembled. 
+
+Cave Dwelling 
+
+On the western outskirts of the city was a cave. It seemed to have been inhabited at one time. 
+The artifacts there were Martian, Upon the cave wall, I found a crystal. When I touched St. five 
+crystals appeared in the pattern of a horizontal rectangle with a fifth point centered above the 
+rectangle. Two of the crystals highlighted in sequence, and a line appeared connecting those two. 
+I found that when 1 touched a correct point, the point highlighted briefly and a line appeared 
+connecting the last connected point with the point I just touched. When I touched an incorrect 
+point, the point highlighted briefly and the last line added to the figure disappeared, setting the 
+diagram back one step. When the diagram was complete, an image appeared, l did not know what 
+it meant. 
+
+Crystal Fragments 
+
+While exploring XII found Martian energy crystals. I detected them with the scanner. My helmet 
+confirmed what they were and. when I chose to acquire them, their energy automatically charged 
+my energy cells. Using this Martian energy did not adversely affect my equipment, and it allowed 
+me to spend more time in the city without having to return to the ship. 
+
+I also found some unusual crystal fragments that, when analyzed, proved to be piece© of a key. 
+One of these pieces was located In a 6and Yacht which was parked on the roof of the 
+Transporter Building. 1 had to assemble the key In order to determine whether or not the key 
+itself—or what it would unlock—posed a threat to the morality of humankind. After finding all 
+four pieces I brought them back to the Rocket's Tool Mt, There I manipulated them into position. 
+I then understood the significance of the Image from the cave dwelling; it was a view of the four 
+Archive key fragment© correctly oriented for re-assembly, 
+
+To assemble the fragments, I first rotated them so that their flat sides faced me. Then I rotat¬ 
+ed each piece clockwise or counterclockwise so that the smooth edge faced out, toward the 
+walls of the analyzer, and the jagged edges faced in. I had to notate seme niece© to flip i hem 
+over so that all the jagged edges would face in, l oriented the longer pieces fjrst and thru the 
+squareish ones. When the four pieces were oriented correctly they pulled themselves together 
+and became one solid crystal. 
+
+
+Spender 
+
+I ran into a madman named Spender. He claimed to know the secrets of the universe. He threat¬ 
+ened to kill me if I attempted to find the Tx Hilt Hja. He kept talking about a secret Archive, I 
+assumed that the key 1 assembled had something to do with It. He told me he knew I had the 
+key, and he would kill me for it. He was raving something about protecting the Archive, and 
+destroying and scattering the key, I shot him. But he was only wounded and got away. He stalks 
+me now. I catch sight of him sometimes, I fear he has abducted the missing members of my 
+team and taken them to the Archive, 
+
+The Archive 
+
+I Found the opening to the Archive, From the middle of the city in front of the steel gate posts, I 
+walked as far east as I could go. When I reached the canyon wall, I turned south. I went on as far 
+as I could until I was blocked by the canyon wall. Then, 1 turned east, The opening to the Archive 
+was hidden In the wall. I touched the door and it opened. Beyond the door was a tunnel maze, I 
+hate mazes, but ft could have been worse; that maniac Bpender could have been in there, hunt¬ 
+ing me, I finally came to a large chamber, it contained consoles of the kind I had seen in other 
+parts of the city, I was running out of energy, 
+
+Otv console contained a purple crystal on a stand—a Martian Singing Book. I stood at the dis¬ 
+play case covered with Martian symbols and touched them one at a time. Each symbol I 
+touched produced a musical tone. There were four triangular spaces next to the Martian key 
+pnd. Maybe the four symbols that appeared In these four triangles are needed to obtain the all- 
+Import, mt secret with which Spender is so obsessed, 
+
+I hr bill tons were shaped like Martian glyphs, but the glyph© had no particular meaning. That Is, 
+they had no particular meaning to a human. Archeologists have determined that books like this 
+are musical Instruments. They were as familiar to Martians as piano© are to humans. I assumed 
+that playlrit the correct notes on the book would cause something to happen, Martian melodies 
+were composed of tone pairings. Tone© were carefully selected and combined by the musician to 
+create a pair. Then, pairs were used to compose songs. The order of a pair is significant. Do-re is 
+no': tb .? same as lie io, I hit random key© on the keyboard and, by accident> made a Martian 
+pair One of the tn 1 ,gles 1ft up. showing a Martian glyph, 1 fumbled aroimd trying to light more 
+tiangles. After piv,s./ng the keys 15 times, the Book pushed me away. I tried again. 
+
+
+
+
+
+
+
+By continued experimentation, I found the correct notes to have revealed all four glyphs, I have 
+recorded this in my working notes. 
+
+When the triangles were lit, each one showed one glyph, making a sequence of four from top to 
+bottom. The glyph shown In each lit triangle, and thus the sequence of four, was always the same. 
+This suggested that the four glyphs—arranged in exactly this sequence—had some meaning. 
+Because the glyphs did not represent letters or words, they could not be translated, ft was 
+possible that they were the notes of another song. As of this writing, no conclusive evidence 
+has been found which would identify what the four-note son% meant. However, I was able to 
+translate the title of the chant which produces them: it was called “Revelation." 
+
+Through another door at the end of the large chamber was a smaller room. In it was a display 
+case topped with a row of blank rectangles. The fact that four glyphs could be revealed in the 
+Singing Book and that this strange case could accommodate four glyphs could not be a coinci¬ 
+dence, I also concluded that this case might hold the thing about which Spender is so con¬ 
+cerned, The significance of the Earth objects in another display case eluded me for the moment. 
+But the significance of the song from the Singing Book was dean The four glyphs could be used 
+to unlock the final case, 
+
+Since I did not know what this case would reveal, an# was almost out of energy, I returned this 
+log to my Rocket, twill leave this log there and return to open the case. 
+
+
+Dr. Langstrom's Journal ends here. 
+She was never seen again.
