@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/15 13:00:41 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/19 16:49:52 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 
-char	*ft_free(char *buffer, char *temp)
+char	*ft_join_n_clear(char *buffer, char *temp)
 {
 	char	*aux;
 
@@ -84,10 +84,11 @@ char	*read_file(int fd, char *buffer)
 		if (bytes_read == -1)
 		{
 			free(temp);
+			free(buffer);
 			return (NULL);
 		}
 		temp[bytes_read] = '\0';
-		buffer = ft_free(buffer, temp);
+		buffer = ft_join_n_free(buffer, temp);
 		if (ft_strchr(temp, '\n'))
 			break ;
 	}
@@ -113,7 +114,7 @@ char	*get_next_line(int fd)
 /*
 void leaks()
 {
-	system("leaks -q a.out");
+	system("leaks -q test");
 }
 
 int main() 
