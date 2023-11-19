@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/19 19:04:20 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/19 19:13:33 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,16 +99,16 @@ char	*read_file(int fd, char *buffer)
 
 char	*get_next_line(int fd)
 {
-	static char	**buffer[1024];
+	static char	*buffer[1024];
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	buffer = read_file(fd, buffer[fd]);
-	if (!buffer)
+	buffer[fd] = read_file(fd, buffer[fd]);
+	if (!buffer[fd])
 		return (NULL);
 	line = ft_read_line(buffer[fd]);
-	buffer = ft_next_line(buffer[fd]);
+	buffer[fd] = ft_next_line(buffer[fd]);
 	return (line);
 }
 /*
