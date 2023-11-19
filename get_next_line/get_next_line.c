@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/19 18:47:45 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/19 19:04:20 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,7 @@ char	*get_next_line(int fd)
 	buffer = ft_next_line(buffer[fd]);
 	return (line);
 }
-
+/*
 void leaks()
 {
 	system("leaks -q test");
@@ -137,3 +137,4 @@ int main()
 
 	return 0;
 }
+*/
