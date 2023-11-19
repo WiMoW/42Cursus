@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/19 19:13:33 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/19 21:14:49 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdio.h>
+#include <time.h>
 
 char	*ft_join_n_clear(char *buffer, char *temp)
 {
@@ -95,7 +96,6 @@ char	*read_file(int fd, char *buffer)
 	free (temp);
 	return (buffer);
 }
-//read(fd, 0, 0) < 0
 
 char	*get_next_line(int fd)
 {
@@ -111,6 +111,7 @@ char	*get_next_line(int fd)
 	buffer[fd] = ft_next_line(buffer[fd]);
 	return (line);
 }
+//read(fd, 0, 0) < 0
 /*
 void leaks()
 {
@@ -124,14 +125,18 @@ int main()
 	{
 		return 1;
 	}
-
+	
+	clock_t begin = clock();
 	char *line;
 	while ((line = get_next_line(fd)) != NULL)
 	{
-		printf("%s\n", line);
+		//printf("%s\n", line);
 		if (line)
 			free(line);
 	}
+	clock_t end = clock();
+	double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	printf("TIME SPENT: %f", time_spent);
 	atexit(leaks);
 	close(fd);
 
