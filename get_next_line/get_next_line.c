@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/19 16:49:52 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/19 18:47:45 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ char	*read_file(int fd, char *buffer)
 			return (NULL);
 		}
 		temp[bytes_read] = '\0';
-		buffer = ft_join_n_free(buffer, temp);
+		buffer = ft_join_n_clear(buffer, temp);
 		if (ft_strchr(temp, '\n'))
 			break ;
 	}
@@ -99,19 +99,19 @@ char	*read_file(int fd, char *buffer)
 
 char	*get_next_line(int fd)
 {
-	static char	*buffer;
+	static char	**buffer[1024];
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	buffer = read_file(fd, buffer);
+	buffer = read_file(fd, buffer[fd]);
 	if (!buffer)
 		return (NULL);
-	line = ft_read_line(buffer);
-	buffer = ft_next_line(buffer);
+	line = ft_read_line(buffer[fd]);
+	buffer = ft_next_line(buffer[fd]);
 	return (line);
 }
-/*
+
 void leaks()
 {
 	system("leaks -q test");
@@ -137,4 +137,3 @@ int main()
 
 	return 0;
 }
-*/
