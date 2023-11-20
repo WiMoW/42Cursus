@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 20:42:22 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/19 21:09:39 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/20 12:46:59 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
+	if (nmemb >= SIZE_MAX || size >= SIZE_MAX)
+		return (NULL);
 	ptr = malloc(nmemb * size);
 	if (ptr == 0)
 		return (ptr);

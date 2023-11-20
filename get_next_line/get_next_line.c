@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/11/19 21:14:49 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/11/20 12:55:39 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ char	*ft_read_line(char *buffer)
 		return (NULL);
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
-	line = ft_calloc(i + 2, sizeof(char));
+	line = ft_calloc((i + 2), sizeof(char));
 	i = 0;
 	while (buffer[i] && buffer[i] != '\n')
 	{
@@ -77,7 +77,9 @@ char	*read_file(int fd, char *buffer)
 
 	if (!buffer)
 		buffer = ft_calloc(1, 1);
-	temp = ft_calloc(BUFFER_SIZE + 1, sizeof(char));
+	temp = ft_calloc((BUFFER_SIZE + 1), sizeof(char));
+	if (!temp)
+		return (NULL);
 	bytes_read = 1;
 	while (bytes_read > 0)
 	{
@@ -130,7 +132,7 @@ int main()
 	char *line;
 	while ((line = get_next_line(fd)) != NULL)
 	{
-		//printf("%s\n", line);
+		printf("%s\n", line);
 		if (line)
 			free(line);
 	}
