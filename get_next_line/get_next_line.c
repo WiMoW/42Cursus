@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/12/09 00:39:54 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/12/13 21:37:50 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ char	*read_file(int fd, char *buffer)
 	int		bytes_read;
 
 	if (!buffer)
-		buffer = ft_calloc(1, 1);
+		return (buffer);
 	temp = ft_calloc((BUFFER_SIZE + 1), sizeof(char));
 	if (!temp)
 		return (NULL);
@@ -84,7 +84,6 @@ char	*read_file(int fd, char *buffer)
 	while (bytes_read > 0)
 	{
 		bytes_read = read(fd, temp, BUFFER_SIZE);
-		/*printf("READ FUNCTION USED! BYTES READ: %d\n", bytes_read);*/
 		if (bytes_read == -1)
 		{
 			free(temp);
