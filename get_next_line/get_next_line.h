@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 16:18:20 by dacaball          #+#    #+#             */
-/*   Updated: 2023/12/13 20:58:46 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/12/13 22:11:41 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1000000
+#  define BUFFER_SIZE 1
 # endif
 
 # include <stdlib.h>

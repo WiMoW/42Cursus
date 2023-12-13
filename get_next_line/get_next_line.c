@@ -6,7 +6,7 @@
 /*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/12/13 21:37:50 by dacaball         ###   ########.fr       */
+/*   Updated: 2023/12/13 22:24:28 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ char	*read_file(int fd, char *buffer)
 	int		bytes_read;
 
 	if (!buffer)
-		return (buffer);
+		buffer = ft_calloc(1, 1);
 	temp = ft_calloc((BUFFER_SIZE + 1), sizeof(char));
 	if (!temp)
 		return (NULL);
@@ -106,7 +106,8 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	buffer = read_file(fd, buffer);
+	if (!buffer || !ft_strchr(buffer, '\n'))
+		buffer = read_file(fd, buffer);
 	if (!buffer)
 		return (NULL);
 	line = ft_read_line(buffer);
@@ -124,7 +125,7 @@ void leaks()
 
 int main() 
 {
-	int fd = open("Mondongo2.txt", O_RDONLY);
+	int fd = open("Mondongo.txt", O_RDONLY);
 	if (fd == -1)
 	{
 		return 1;
