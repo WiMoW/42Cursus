@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/12/13 22:24:28 by dacaball         ###   ########.fr       */
+/*   Updated: 2024/01/11 00:07:05 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,6 @@ char	*read_file(int fd, char *buffer)
 	while (bytes_read > 0)
 	{
 		bytes_read = read(fd, temp, BUFFER_SIZE);
-		/*printf("READ FUNCTION USED! BYTES READ: %d\n", bytes_read);*/
 		if (bytes_read == -1)
 		{
 			free(temp);
