@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dacaball <dacaball@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: dacaball <dacaball@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 20:09:33 by dacaball          #+#    #+#             */
-/*   Updated: 2023/12/13 22:24:28 by dacaball         ###   ########.fr       */
+/*   Updated: 2024/01/11 00:20:42 by dacaball         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,7 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-/*
+
 //read(fd, 0, 0) < 0
 
 void leaks()
@@ -147,4 +147,3 @@ int main()
 
 	return 0;
 }
-*/
