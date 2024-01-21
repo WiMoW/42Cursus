@@ -1,4 +1,5 @@
-#include <mlx.h>
+#include "minilibx-linux-master/mlx.h"
+//#include <mlx.h>
 
 typedef struct s_data {
 	void	*img;
